@@ -6,7 +6,7 @@ WORKDIR /app
 RUN npm ci
 RUN npm run build
 #################################################
-FROM node as production
+FROM node:lts-slim as production
 WORKDIR /app
 ENV NODE_ENV="production"
 
