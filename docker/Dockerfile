@@ -23,4 +23,5 @@ WORKDIR /app
 EXPOSE 53 53/udp 3000
 ENV ZONE_DIR="/etc/coredns"
 VOLUME ["/etc/coredns"]
+USER root
 ENTRYPOINT ["sh", "/app/run-api-dns.sh"]
