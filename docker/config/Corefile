@@ -1,0 +1,29 @@
+.:53 {
+	log
+	errors
+	health {
+		lameduck 5s
+	}
+	ready
+
+	forward . tls://1.1.1.1 tls://1.0.0.1 {
+		tls_servername cloudflare-dns.com
+		policy sequential
+		health_check 60s
+	}
+
+	prometheus :9153
+	whoami
+	cache 300
+	reload
+}
+
+# This is a sample config for supporting custom domain
+# thought .db files (zone files).
+# test {
+#     log
+#     errors
+#     file /etc/coredns/test.db {
+#         reload 5s
+#     }
+# }

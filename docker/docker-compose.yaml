@@ -1,0 +1,29 @@
+version: '3.7'
+name: mikrotik-dns
+services:
+  coredns:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+      labels:
+        - "mikrotik-dns"
+    container_name: mikrotik-coredns
+    expose:
+      - '53'
+      - '53/udp'
+      - '3000'
+    ports:
+      - '5300:53'
+      - '5300:53/udp'
+      - '9153:9153'
+      - '3000:3000'
+    command: '-conf /etc/coredns/Corefile'
+    environment:
+      - "API_KEY=test1234"
+    volumes:
+      - './config:/etc/coredns'
+    deploy:
+      resources:
+        limits:
+          memory: '64M'
+          cpus: '0.1'

@@ -1,0 +1,39 @@
+; Zone: test.
+; Exported  (yyyy-mm-ddThh:mm:ss.sssZ): 2023-12-26T10:53:51.932Z
+
+$ORIGIN test.
+$TTL 1d
+
+; SOA Record
+@	 		IN	SOA	test.	router.test	(
+5	 ;serial
+1	 ;refresh
+15	 ;retry
+3	 ;expire
+2	 ;minimum ttl
+)
+
+; NS Records
+
+; MX Records
+
+; A Records
+@	IN	A	10.0.1.1
+
+; AAAA Records
+
+; CNAME Records
+router	IN	CNAME	test.
+
+; PTR Records
+
+; TXT Records
+
+; SRV Records
+
+; SPF Records
+
+; CAA Records
+
+; DS Records
+
