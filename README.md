@@ -5,7 +5,7 @@
 ## Description
 
 A quick and dirty project to have a CoreDNS and simple API to update zone records (with NestJS).
-It supports docker and a API key for "security".  
+It supports docker and an API key for "security".  
 
 ## Installation
 
