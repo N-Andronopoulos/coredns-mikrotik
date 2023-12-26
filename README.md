@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://xkcd.com/1831/" target="blank"><img src="https://imgs.xkcd.com/comics/here_to_help.png" width="200" alt="xkcd-comic-1831" /></a>
+  <a href="https://xkcd.com/1831/" target="blank"><img src="https://imgs.xkcd.com/comics/here_to_help.png" alt="xkcd-comic-1831" /></a>
 </p>
 
 ## Description
